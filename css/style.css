@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.clearfix {
+  clear: both;
+}
+.fl-left {
+  float: left;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+.special-heading {
+  position: relative;
+}
+.special-heading::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 40px;
+  display: block;
+  border-bottom: 2px solid #333;
+}
+.separetor {
+  border: 1px solid #eee;
+}
+/* ----------------------------------------------*/
+.navbar {
+  font-size: 18px;
+  height: 0;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.navbar .brand {
+  width: 50%;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.navbar .links {
+  width: 50%;
+  margin-top: 25px;
+}
+.navbar .links li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+}
+.navbar .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .links li.active a,
+.navbar .links li a:hover {
+  color: #1abc9c;
+}
+.navbar .links li.active,
+.navbar .links li:hover {
+  border-bottom: 2px solid #1abc9c;
+}
+/* ---------------------------------------------------------------- */
+.head {
+  background: url(../img/header2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.head .overlay {
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.head .bx-wrapper {
+  background: none;
+  box-shadow: none;
+  border: 0;
+  height: 100%;
+}
+.head .bx-wrapper .bx-viewport {
+  height: 100% !important;
+  text-align: center;
+}
+.head .bxslider {
+  height: 100%;
+}
+.head .bxslider li {
+  display: block;
+}
+.head .bxslider li h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.head .bxslider li h2 span {
+  color: #1abc9c;
+}
+/* ----------------------------------------------- */
+.services {
+  padding: 80px 20px 40px;
+}
+.services h2 {
+  margin: 0 0 50px;
+}
+.services .item {
+  width: 33.33333%;
+  margin-bottom: 20px;
+}
+.services .item i {
+  margin-top: 20px;
+  color: #1abc9c;
+  float: left;
+  width: 17%;
+  margin-right: 10%;
+}
+.services .item .info {
+  width: 70%;
+}
+.services .item .info h3 {
+  color: #585353;
+  margin-bottom: 10px;
+}
+.services .item .info p {
+  color: #888;
+  margin-top: 0;
+  line-height: 1.4;
+}
+/* ------------------------------------------ */
+.team {
+  padding: 40px 20px;
+}
+.team .box:not(:first-child) {
+  width: 15.25%;
+  margin-left: 1%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.team .box:not(:first-child) img {
+  max-width: 100%;
+}
+.team .box:not(:first-child) .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 183px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(26, 188, 156, 0.9);
+  display: none;
+}
+.team .box:not(:first-child):hover .overlay {
+  display: block;
+}
+.team .box:first-child {
+  width: 35%;
+}
+.team h2 {
+  padding: 0 0 15px;
+}
+.team .box p {
+  color: #888;
+  line-height: 1.4;
+  font-size: 16px;
+}
+/* ---------------------------------------- */
+.testim {
+  background: url(../img/keyboard.jpg);
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+.testim .t-overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.testim h2 {
+  margin: 80px 0 10px;
+  font-size: 40px;
+}
+.testim q {
+  display: block;
+  margin-top: 60px;
+  line-height: 2;
+  font-size: 20px;
+  color: darkgray;
+}
+.testim p {
+  color: #1abc9c;
+  font-size: 30px;
+}
+.testim .slider > div {
+  display: none;
+}
+.testim .slider .active {
+  display: block;
+}
+/* ---------------------------------------- */
+.project {
+  padding: 60px 0;
+}
+.project ul {
+  margin-top: 50px;
+}
+.project ul li {
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #d4cccc;
+  color: #a7a7a7;
+  padding: 10px;
+  margin-right: 5px;
+}
+.project ul li.select {
+  border: 2px solid #1abc9c;
+  color: #fff;
+  background-color: #1abc9c;
+}
+.project .gallery {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.project .gallery .row > div:nth-child(2) {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.project .gallery .row > div {
+  margin-bottom: 12px;
+  width: 32.6666%;
+  float: left;
+  position: relative;
+}
+.project .gallery .row > div .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  line-height: 299px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(26, 188, 156, 0.9);
+  display: none;
+}
+.project .gallery .row > div .heart {
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.project .gallery .row > div:hover .over,
+.project .gallery .row > div:hover .heart {
+  display: block;
+}
+.project .gallery .row > div img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* ------------------------------------------------ */
+.foot {
+  background-color: #232323;
+  color: #6c6c6c;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.foot .coll {
+  width: 25%;
+}
+.foot .coll h2 {
+  font-size: 18px;
+  color: #fff;
+}
+.foot .about p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.foot .about i {
+  display: inline-block;
+  color: #979797;
+  width: 50px;
+  padding: 15px;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
+.foot .tags span {
+  display: inline-block;
+  color: #ccc;
+  padding: 15px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #979797;
+}
+.foot .recent div {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.foot .recent div img {
+  margin-right: 10px;
+  float: left;
+}
+.foot .recent div h4 {
+  margin: 8px 0;
+  color: #ccc;
+}
+.foot .blog ul li {
+  padding: 15px;
+  border-bottom: 1px solid #979797;
+  color: #ccc;
+}
+.foot .copy {
+  margin-top: 30px;
+}
